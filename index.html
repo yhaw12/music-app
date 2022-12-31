@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <title>Music Player</title>
+</head>
+<body>
+    <section>
+        <div class="player">
+            <nav>
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="image">
+                <img src="assest/pic-2.png"/>
+            </div>
+
+            <div class="text">
+                <p>song by Kwesi Aurthur</p>
+            </div>
+
+            <div class="audio">
+                <audio  id="sound" src="assest/Fameye Destiny (official video) ( 128kbps ).m4a" type="audio/mp3" controls></audio>
+            </div>
+
+            <input type="range"  value="0" name="slider" id="music-range">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward "></i></div>              
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="control"></i></div>              
+                <div><i class="fa-solid fa-forward"></i></div>              
+            </div>
+
+        </div>
+        <footer>
+            <p>Design By Blankson Obeng  &copy; <span id="year">All Rights Reserved, 2042</span></p>
+        </footer>
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
